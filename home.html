@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>frip</title>
 </head>
+
 <body>
-    <div id="the_all_div">
+    <div>
         <div id="div_1">
             <nav>
                 <div id="list_1">Frip</div>
@@ -18,6 +20,33 @@
                 </div>
             </nav>
         </div>
+        <div id="div_2">
+            <div class="imgbox">
+                <img src="images/toa-heftiba-KQ1n6HzSahY-unsplash.png">
+            </div>
+            <div>
+                <ul class="thumb">
+                    <il><a href="images/toa-heftiba-KQ1n6HzSahY-unsplash.png" target="imgbox"><img
+                                src="images/toa-heftiba-KQ1n6HzSahY-unsplash.png"></a></il>
+                    <il><a href="images/clem-onojeghuo-iuvLYv85r40-unsplash.png" target="imgbox"><img
+                                src="images/clem-onojeghuo-iuvLYv85r40-unsplash.png"></a></il>
+                    <il><a href="images/mike-von-TPUGbQmyVwE-unsplash.png" target="imgbox"><img
+                                src="images/mike-von-TPUGbQmyVwE-unsplash.png"></a></il>
+                    <il><a href="images/mnz-ToLMORRb97Q-unsplash.png" target="imgbox"><img
+                                src="images/mnz-ToLMORRb97Q-unsplash.png"></a></il>
+                </ul>
+            </div>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.thumb a').click(function (e) {
+                e.preventDefault();
+                $('.imgbox img').attr("src", $(this).attr("href"))
+            })
+        })
+    </script>
 </body>
+
 </html>

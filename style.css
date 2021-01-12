@@ -209,3 +209,98 @@ body {
     height: 300px;
   }
 }
+
+/*partie 5*/
+
+#div_7 {
+  width: 80%;
+  height: 400px;
+  margin: 100px 10%;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 20% 20% auto;
+}
+.back-1 {
+  grid-column: 1/3;
+  grid-row: 2/4;
+  background-color: #7D7D7D;
+  width: 100%;
+}
+.sub {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  align-items: center;
+}
+.sub h1 {
+  font-size: 90px;
+}
+.mail {
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+.mail input {
+  width: 80%;
+  height: 80px;
+  margin: 0 10%;
+  margin-top: 6%;
+  border: solid #4A4A4A;
+}
+#div_8 {
+  width: 80%;
+  height: 600px;
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+#div_8 div{
+  height: 600px;
+}
+#div_8 img{
+  width: 100%;
+  height: 100%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 10%;
+}
+.contact input,textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+textarea {
+  height: 200px;
+}
+#div_9 {
+  width: 80%;
+  margin: 50px 10%;
+  display: flex;
+  justify-content: center;
+}
+#div_9 img {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px;
+}
+@media (max-width: 900px) {
+  .sub h1 {
+    font-size: 50px;
+  }
+  #div_7 {
+    height: 200px;
+  }
+  .mail input {
+    width: 80%;
+    height: 40px;
+  }
+  .img-div {
+    display: none;
+  }
+  #div_8 {
+    display: block;
+  }
+}

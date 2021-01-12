@@ -188,3 +188,24 @@ body {
     height: 60px;
   }
 }
+
+/*partie 4*/
+
+#div_6 {
+  margin: 100px 10%;
+  width: 80%;
+  height: 500px;
+}
+#div_6 div {
+  height: 100%;
+}
+#div_6 div img{
+  height: 100%;
+}
+@media (max-width: 900px){
+  #div_6 {
+    margin-top: 500px;
+    width: 80%;
+    height: 300px;
+  }
+}

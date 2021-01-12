@@ -33,10 +33,14 @@ body {
   padding: 15px;
 }
 #list_1:hover,
-#list_2 div:hover {
+#list_2 div:hover,#list_2 button:hover {
   background-color:#7D7D7D;
 }
-
+#div_1 button {
+  background-color: #4A4A4A;
+  color: white;
+  border: none;
+}
 @media (max-width: 900px) {
   #the_all_div {
     display: block;

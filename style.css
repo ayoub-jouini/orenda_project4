@@ -15,7 +15,8 @@ body {
 }
 #div_1 nav {
   height: 100%;
-  margin: 0 20px;
+  width: 80%;
+  margin: 0 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,20 +95,48 @@ body {
 }
 .img_div_1 {
   width: 35%;
+  height: 100%;
+  background-image: url(images/the-ian-ZCoqcrWp9GY-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.img_div_1 div{
+  width: 70%;
+  margin: 7% 7%;
+  color: white;
+}
+.img_div_1 h1 {
+  font-size: 30px;
 }
 .img_div_2{
   width: 65%;
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
 .img_div_2 div{
-  width: 50%;
-  height: 50%;
-}
-.img_div_1 img,.img_div_2 img{
   width: 100%;
-  height: 100%;
 }
+.img_1 {
+  background-image: url(images/ali-marel-AASWrNdaZK0-unsplash.jpg);
+}
+.img_2 {
+  background-image: url(images/dami-adebayo-k6aQzmIbR1s-unsplash.jpg);
+}
+.img_3 {
+  background-image: url(images/rayul-_M6gy9oHgII-unsplash.jpg);
+}
+.img_4 {
+  background-image: url(images/ian-dooley-10ca-K3e6Ko-unsplash.jpg);
+}
+.img_1,.img_2,.img_3,.img_4 {
+  width: 100%;
+  height: 50%;
+  background-size: cover;
+}
+
 @media (max-width: 900px){
   .img_div_1 {
     width: 100%;

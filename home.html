@@ -44,7 +44,7 @@
                     <a href="#div_3"><button class="btn btn-lg btn-primary">ptoducts</button></a>
                 </div>
             </div>
-            <div>
+            <div class="div-list">
                 <ul class="thumb">
                     <il><a href="images/mnz-ToLMORRb97Q-unsplash.png" target="imgbox"><img
                                 src="images/mnz-ToLMORRb97Q-unsplash.png"></a></il>
@@ -60,7 +60,7 @@
 
         <!--partie 2-->
 
-        <div id="div_3">
+        <div id="div_3" class="disappear_3">
             <div class="img_div_1">
                 <div>
                     <h1>PRODUCT LINES</h1>
@@ -91,7 +91,7 @@
 
         <!--partie 3-->
 
-        <div id="div_4">
+        <div id="div_4" class="disappear_4">
             <h1><b>who are we !</b></h1>
             <p>We believe in a world where you have total
                 freedom to be you, without judgement.
@@ -107,7 +107,7 @@
                 the confidence to be whoever you
                 want to be.</p>
         </div>
-        <div id="div_5">
+        <div id="div_5" class="disappear_5">
             <div class="back">
 
             </div>
@@ -150,7 +150,7 @@
 
         <!--partie 4-->
 
-        <div id="div_6">
+        <div id="div_6" class="disappear_6">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -176,7 +176,7 @@
 
         <!--partie 5-->
 
-        <div id="div_7">
+        <div id="div_7" class="disappear_7">
             <div class="back-1">
 
             </div>
@@ -187,7 +187,7 @@
                 <input type="text" name="name" value="" placeholder="E-mail" />
             </div>
         </div>
-        <div id="div_8">
+        <div id="div_8" class="disappear_8">
             <div class="img-div">
                 <img src="images/daniel-monteiro-VMeHP3mNJL4-unsplash.jpg">
             </div>
@@ -197,7 +197,7 @@
                 <textarea type="text" name="text" value="" placeholder="subject"></textarea>
             </div>
         </div>
-        <div id="div_9">
+        <div id="div_9" class="disappear_9">
             <img src="icons/Path 38.svg">
             <img src="icons/Path 39.svg">
             <img src="icons/Path 40.svg">
@@ -240,6 +240,68 @@
                 $('.imgbox img').attr("src", $(this).attr("href"))
             })
         })
+    </script>
+    <script type="text/javascript">
+        function scrollAppear_3() {
+            var introText = document.querySelector('.disappear_3');
+            var introPosition = introText.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.2;
+
+            if (introPosition < screenPosition) {
+                introText.classList.add('appear_3');
+            }
+        }
+        window.addEventListener('scroll', scrollAppear_3);
+        function scrollAppear_4() {
+            var introText = document.querySelector('.disappear_4');
+            var introPosition = introText.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.2;
+
+            if (introPosition < screenPosition) {
+                introText.classList.add('appear_4');
+            }
+        }
+        window.addEventListener('scroll', scrollAppear_4);
+        function scrollAppear_5() {
+            var introText = document.querySelector('.disappear_5');
+            var introPosition = introText.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.2;
+
+            if (introPosition < screenPosition) {
+                introText.classList.add('appear_5');
+            }
+        }
+        window.addEventListener('scroll', scrollAppear_5);
+        function scrollAppear_6() {
+            var introText = document.querySelector('.disappear_6');
+            var introPosition = introText.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.2;
+
+            if (introPosition < screenPosition) {
+                introText.classList.add('appear_6');
+            }
+        }
+        window.addEventListener('scroll', scrollAppear_6);
+        function scrollAppear_7() {
+            var introText = document.querySelector('.disappear_7');
+            var introPosition = introText.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.2;
+
+            if (introPosition < screenPosition) {
+                introText.classList.add('appear_7');
+            }
+        }
+        window.addEventListener('scroll', scrollAppear_7);
+        function scrollAppear_8() {
+            var introText = document.querySelector('.disappear_8');
+            var introPosition = introText.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.2;
+
+            if (introPosition < screenPosition) {
+                introText.classList.add('appear_8');
+            }
+        }
+        window.addEventListener('scroll', scrollAppear_8);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
